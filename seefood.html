@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <title>A.R.K</title>
+
+     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
+
+     <link rel="stylesheet" href="Assets/CSS/myStylesheet.css">
+     <link rel="stylesheet" href="Assets/CSS/style.css">
+</head>
+
+<body>
+     <div class="a-section">
+          <div class="a-margin-16-left-right">
+               <div class="a-container a-width-12-12">
+                    <div class="a-margin-16-left-right">
+
+                         <h1>SEEFOOD</h1><br>
+
+                         <h1>Overview</h1><br>
+                         <p class="l-txt">Despite there being thousands of recipes online and more and more cooking apps popping up each year, cookbooks are still prevalent. So while trying to figure out how my team and I could improve the entire experience of using a cookbook we came up with Seefood.</p><br>
+
+                         <p class="l-txt">Seefood is an interactive recipe book which utilizes a web application, that uses marker-based augmented reality, scanning AR and QR codes, to initialize an immersive experience. Users can visualize 3D models of ingredients in augmented reality, AR, and also buy one of the three recommended products against that ingredient, from Amazon.</p><br>
+
+                         <h1>Customer Problem</h1><br>
+                         <p class="l-txt">When using a cookbook, customers often come across ingredients they are not familiar with at all. Looking up the relevant information, deciding to choose from the numerous products/brands agianst that ingredient, and trying to find out where to get it from is a very tedious process.</p><br>
+
+                         <h1>Our Solution</h1><br>
+                         <p class="l-txt">Our app allows the customer to not only "see" what an ingredient actually looks like, via a 3D model, but we also provide the most popular recommendations for ingredients which they can shop online on Amazon.</p><br>
+
+                         <h1>My Role</h1>
+                         <p class="l-txt">I was the one on a team of three, who primarily worked on everything to do with the AR part of our project. That meant setting up the AR environment and making sure that the 3D models and their interactions worked as attended.</p><br>
+
+                         <h1>Challenge(s) I came across</h1><br>
+                         <p class="l-txt">The main challenge was the fact that this was my first time working with augmented reality and its related technologies, AR.js A-Frame, on top of which we had a timeline of a week and a half.</p><br>
+
+                         <p class="l-txt">That being said there were specific challenges/hurdles I came across which are as follows:
+                         </p><br>
+                         <ul class="a-margin-16-left-right">
+                              <li>As I could not create my own 3D models, I had to resort to finding pre-built ones online. As I had little control over the both the quality and file format, this was a tedious process.</li>
+                              <li>A-Frame supports a lot file formats for 3D models, but finding which one rendered as it should, was a challenge - some formats did not render textures properly.</li>
+                              <li>Lastly, adding an "onclick" functionality to all the 3D models was the most challenging part. This is achieved by adding "a-cursor" component to your AR enivronment. The cursor component uses raycasting intersection concept in order to mimic a traditional mouse click. In order to understand how the cursor component works I had to read up on a lot of documentations and see the few tutorials that were available online.</li>
+                         </ul><br>
+
+                         <h1>Demo</h1><br>
+
+                         <p class="l-txt">Below is a concept of the recipe book that would accompany our app. In order to initialize the entire experience we use QR code and for showing 3D models we use custom AR codes.</p>
+                         <div class="a-col">
+                              <div class="seefood-container a-container a-margin-16-top-bottom a-width-6-12">
+                                   <div id="seefood-inner">
+                                        <div class="img-container" style="cursor: default; padding-top: 110%;">
+                                             <img src="Assets/Images/seefood-demo-1.jpg" alt="">
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <div class="seefood-container a-container a-margin-16-top-bottom a-width-6-12">
+                                   <div id="seefood-inner" class="a-margin-16-left">
+                                        <div class="img-container" style="cursor: default; padding-top: 113.5%;">
+                                             <img src="Assets/Images/seefood-demo-2.jpg" alt="">
+                                        </div>
+                                   </div>
+                              </div>
+                         </div><br>
+
+                         <h2>Step-by-Step Working of the App</h2><br>
+                         
+                         <p class="l-txt"><strong>Step 1: </strong>Scan the QR code. This will launch the application and will take the user to the homepage, as shown below:</p>
+                         <div class="a-col">
+                              <div class="seefood-container a-container a-margin-16-top-bottom a-width-4-12">
+                                   <div id="seefood-inner">
+                                        <div class="img-container" style="cursor: default; padding-top: 200%;">
+                                             <img src="Assets/Images/demo-clip-1.gif" alt="">
+                                        </div>
+                                   </div>
+                              </div>
+                         </div><br>
+
+                         <p class="l-txt"><strong>Step 2: </strong>Click on the AR button to initialize the "AR" experience.</p>
+                         <div class="a-col">
+                              <div class="seefood-container a-container a-margin-16-top-bottom a-width-4-12">
+                                   <div id="seefood-inner">
+                                        <div class="img-container" style="cursor: default; padding-top: 200%;">
+                                             <img src="Assets/Images/demo-clip-2.gif" alt="">
+                                        </div>
+                                   </div>
+                              </div>
+                         </div><br>
+                         
+                         <p class="l-txt"><strong>Step 3: </strong>After allowing camera access to the application, the user will be able to see all the 3D models. Clicking on one of the #d models will take the user to its recommendations page, where the user will be shown top 3 recommendations. Each recommendation has a "Shop on Amazon" option which will redirect the user to the product's respective page on Amazon.</p><br>
+                         
+                         <p class="l-txt"><strong>NOTE:</strong> order to "click" on one of the 3D models, the target reticle needs to align with the 3D model, sit on top of it.</p><br>
+                         <div class="a-col">
+                              <div class="seefood-container a-container a-margin-16-top-bottom a-width-4-12">
+                                   <div id="seefood-inner">
+                                        <div class="img-container" style="cursor: default; padding-top: 200%;">
+                                             <img src="Assets/Images/demo-clip-3.gif" alt="">
+                                        </div>
+                                   </div>
+                              </div>
+                         </div><br>
+                    </div>
+               </div>
+          </div>
+     </div>
+</body>
+
+</html>

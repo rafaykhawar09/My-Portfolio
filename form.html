@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <title>A.R.K</title>
+
+     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
+
+     <link rel="stylesheet" href="Assets/CSS/myStylesheet.css">
+     <link rel="stylesheet" href="Assets/CSS/style.css">
+</head>
+
+<body>
+
+     <div class="a-section">
+          <div class="a-margin-16-left-right">
+               <div class="a-container a-width-12-12">
+                    <div class="a-margin-16-left-right">
+
+                         <h1>PARALLEL TRANSITION - LOGIN/SIGN-UP FORM</h1><br>
+
+                         <p class="l-txt">Below is a demo of what the project that I made:</p>
+
+                         <div class="a-col">
+                              <div id="gif-container" class="a-container a-margin-16-top-bottom a-width-6-12">
+                                   <div class="a-margin-16-right">
+                                        <div class="img-container" style="padding-top: 62.025%; border-radius: 5px; box-shadow: 0 5px 10px -3px grey; overflow: hidden;">
+                                             <img src="Assets/Images/parallelTransition.gif" alt="">
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <h1>What is the experiment?</h1>
+                         <p class="l-txt">For a while now I have been intrigued with CSS animations and have wanted to experiment with them. After searching online I came across a <a href="https://codepen.io/FlorinPop17/pen/vPKWjd" class="florin-link" target="_blank">"Double-Slider Form"</a> by Florin Pop, on Codepen, that I really liked.</p><br>
+
+                         <p class="l-txt">This is my take on double slider form, done in a way that seemed more intuitive to me, and before I go into the details of how i achieved it I will first explain the components that make up the sliding form.</p><br>
+
+                         <p class="l-txt">The double slider form consists of 5 smaller components inside one main component:</p><br>
+
+                         <ol class="a-margin-16-left-right l-txt">
+                              <li>The Slider</li>
+                              <li>The Login Form</li>
+                              <li>The Sign Up Form</li>
+                              <li>The Login Message</li>
+                              <li>The Sign Up Message</li>
+                         </ol><br>
+
+                         <p class="l-txt">The Slider is just an empty panel with a red background that moves from left to right and vice versa every time you switch between one of the 2 states(only one is visible at any given moment):</p><br>
+
+                         <ul class="a-margin-16-left-right l-txt">
+                              <li>The Login Form alongside the Sign Up Message <strong>(State-I)</strong></li>
+                              Or
+                              <li>The Sign Up Form alongside the Login Message <strong>(State-II)</strong></li>
+                         </ul><br>
+
+                         <p class="l-txt">The Message panels contain some text and a button - upon clicking it you will switch between one of the 2 states and move the Slider.</p><br>
+
+                         <h2>The Animation</h2>
+                         <p class="l-txt">Initially the State-I is visible, while State-II is hidden. This "hidden" affect is achieved by setting the z-index property to -1. When the switch button is clicked on the Slider begins to move from it's initial position, right, to left. At the same time, State-I panels begin to move to the right as well. Just as the Slider reaches the middle State-I's z-index is changed from 20 to -1, while State-II's z-index is changed from -1 to 20.</p><br>
+
+                         <h1>Why did I do this?</h1>
+                         <p class="l-txt">I love doing front-end heavy projects and ever since I gained the necessary skills, I've been wanting to experiment with animations. This project was my first dab at it.</p><br>
+
+                         <h1>R & D</h1>
+                         <p class="l-txt">The first step for starting any project is prototyping, and the images below are just some of the rough sketches that I initially came up with in order to get started. Drawing out all the components, helped me visualize how the animation would play out eventually.
+                         </p>
+
+                         <div class="a-col">
+                              <div class="prototype-container a-container a-margin-16-top-bottom a-width-6-12">
+                                   <div id="prototype-inner" class="a-margin-16-right">
+                                        <div class="img-container" style="cursor: default;">
+                                             <img src="Assets/Images/prototype1.jpg" alt="">
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <div class="prototype-container a-container a-margin-16-top-bottom a-width-6-12">
+                                   <div id="prototype-inner" class="a-margin-16-left">
+                                        <div class="img-container" style="cursor: default; ">
+                                             <img src="Assets/Images/prototype2.jpg" alt="">
+                                        </div>
+                                   </div>
+                              </div>
+                              
+                              <div class="prototype-container a-container a-margin-16-top-bottom a-width-6-12">
+                                   <div id="prototype-inner" class="a-margin-16-right">
+                                        <div class="img-container" style="cursor: default;">
+                                             <img src="Assets/Images/prototype3.jpg" alt="">
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <div class="prototype-container a-container a-margin-16-top-bottom a-width-6-12">
+                                   <div id="prototype-inner" class="a-margin-16-left">
+                                        <div class="img-container" style="cursor: default;">
+                                             <img src="Assets/Images/prototype4.jpg" alt="">
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <p>While coding, I initially started of with using the JQuery's ".animate()" as I felt at that time that it gave me more control. As I grew more and more comfortable I started to shift to CSS keyframes and the "transition" property. By the end of the project even keyframes seemed unnecesary to me and I was using only the transition property and using JQuery for adding and removing the CSS classes that were being used for hiding & translation.</p><br>
+
+                         <h1>Challenge(s) I came across</h1>
+                         <p class="l-txt">As this challenge was about me tackling animation, and for the first time on top of that, it comes as no surprise that it was the most difficult part of the project. Although, in hindsight the animation was just a simple show-and-hide, as I coded I realized that it was deceptively simple. Figuring out the timing was a tedious trial and error process.</p><br>
+                    </div>
+               </div>
+          </div>
+     </div>
+
+     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+     <script src="Assets/JS/form-script.js"></script>
+</body>
+
+</html>
