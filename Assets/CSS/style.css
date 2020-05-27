@@ -19,6 +19,7 @@
 }
 
 .hero-img{
+     position: relative;
      height: 60vh;
      background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../Images/cover.jpg");
      background-size: cover;
@@ -26,9 +27,9 @@
 }
 
 .hero-txt{
+     position: absolute;
      text-align: center;
      color: white;
-     position: relative;
      top: 50%;
      left: 50%;
      transform: translate(-50%, -50%);
