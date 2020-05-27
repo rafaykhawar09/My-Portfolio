@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <title>A.R.K</title>
+
+     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
+
+     <link rel="stylesheet" href="Assets/CSS/myStylesheet.css">
+     <link rel="stylesheet" href="Assets/CSS/style.css">
+</head>
+
+<body>
+     <div class="head">
+          <div class="navbar after-scroll">
+               <h4 class="h-4 a-padding-16-top-bottom"><a href="index.html" style="color: black; text-decoration: none;">Abdur Rafay Khawar</a></h4>
+          </div>
+     </div>
+
+     <div class="a-section" style="padding-top: 100px;">
+          <div class="a-margin-16-left-right">
+               <div class="a-container a-width-12-12">
+                    <div class="a-margin-16-left-right">
+
+                         <h1>Loading Screen</h1><br>
+
+                         <p class="l-txt">Below is a demo of what the project that I made:</p>
+
+                         <div class="a-col">
+                              <div id="gif-container" class="a-container a-margin-16-top-bottom a-width-6-12">
+                                   <div class="a-margin-16-right">
+                                        <div class="img-container" style="padding-top: 56.25%; border-radius: 5px; box-shadow: 0 5px 10px -3px grey; overflow: hidden; cursor: auto;">
+                                             <img src="Assets/Images/loadingScreenGIF.gif" alt="">
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <h2>What is the experiment?</h2>
+                         <p class="l-txt">This experiment was learning about SVGs (inline, in this case) and animations. This is my second experiment/project regarding animation, the first being the <strong><a href="https://rafaykhawar09.github.io/Parallel-Transition/" target="_blank" class="a-link">"Parallel Transition Form"</a></strong>. This project began when I encountered <strong><a href="https://caferati.me/" target="_blank" class="a-link">"Rafael Caferati's Portfolio"</a></strong>. Although his entire portfolio is impressive, it was the initial loading screen that I wanted to replicate.</p><br> 
+
+                         <h2>The Process</h2>
+                         <p class="l-txt">The loading screen consists of 2 parts:</p><br>
+
+                         <ol class="a-margin-16-left-right l-txt">
+                              <li>Radial progress bar</li>
+                              <li>The containing div that spans the enitre screen</li>
+                         </ol><br>
+                         
+                         <p class="l-txt">The most important part of the animation is the radial progreess bar which I initially did not make using SVG because of my inexperience and hence insufficient knowledge about them, which made them see too daunting. My initial design consisted of 3 main parts:</p><br>
+
+                         <ol class="a-margin-16-left-right l-txt">
+                              <li>A circular div, with grey borders.</li>
+                              <li>A set of 7 circular divs(".arc"), that represent an arc of the circle, each positioned from 0 degrees - 270 degrees respectively, with a difference of 45 degrees between them. Each div has a colored top-border, while all the others are transparent.</li>
+                              <li>A circular div(".moving-arc"), that rotates from 0 degrees to 360 degrees on page load. This div also has a colored top-border while the others are transparent.</li>
+                         </ol><br>
+
+                         <h2>The Animation Explained</h2>
+                         <p class="l-txt">The animation is fairly simple. Initially the set of 7 "arcs" is hidden. As the "moving-arc" rotates from 0-360 degrees, and passes over them, their visiblity is turned on. It is like leaving a trail of bread crumbs.</p><br>
+
+                         <div class="a-col">
+                              <div class="prototype-container a-container a-margin-16-top-bottom a-width-6-12">
+                                   <div id="prototype-inner" class="a-margin-16-right">
+                                        <div class="img-container" style="cursor: default;">
+                                             <img src="Assets/Images/loading-prototype.jpg" alt="">
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <p class="l-txt">After I finished my initial variant of the radial progress bar, I started reading about SVGs and saw tutorials to understand them better. As I had already created a progress bar, albeit far diffrently, at least I understood how the animation would be. This helped alot when I was using SVG.</p><br>
+
+                         <p class="l-txt">The final part of the animation is fairly simple. once the radial progress bar has filled, move the containing div to the bottom of the screen and turn off it's visibility.</p><br>
+
+                         <h2>Challenge(s) I came across</h2>
+                         <p class="l-txt">The main challenge, for the most part, was my own inhibition of using SVGs. Having initially made the progress bar in a way that was more familiar, actually helped me to understand how I could work with inline SVG.</p><br>
+                    </div>
+               </div>
+          </div>
+     </div>
+
+     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+     <script src="Assets/JS/script.js"></script>
+</body>
+
+</html>

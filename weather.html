@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <title>A.R.K</title>
+
+     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
+
+     <link rel="stylesheet" href="Assets/CSS/myStylesheet.css">
+     <link rel="stylesheet" href="Assets/CSS/style.css">
+</head>
+
+<body>
+     <div class="head">
+          <div class="navbar after-scroll">
+               <h4 class="h-4 a-padding-16-top-bottom"><a href="index.html" style="color: black; text-decoration: none;">Abdur Rafay Khawar</a></h4>
+          </div>
+     </div>
+
+     <div class="a-section" style="padding-top: 100px;">
+          <div class="a-margin-16-left-right">
+               <div class="a-container a-width-12-12">
+                    <div class="a-margin-16-left-right">
+
+                         <h1>Weather Forecast App (Concept for Mobiles)</h1><br>
+
+                         <p class="l-txt">Below is a demo of what the project that I made:</p>
+
+                         <div class="a-col">
+                              <div id="gif-container" class="a-container a-margin-16-top-bottom a-width-6-12">
+                                   <div class="a-margin-16-right">
+                                        <div class="img-container" style="padding-top: 75%; border-radius: 5px; box-shadow: 0 5px 10px -3px grey; overflow: hidden; cursor: auto;">
+                                             <img src="Assets/Images/weather.png" alt="">
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <h2>What is the project?</h2>
+                         <p class="l-txt">It is a weather app concept for mobile phones. It shows the current weather, hourly and weekly forecast of the weather at a particular location. Openweather API is being used to get the weather data. I am also using illustrations from "unDraw" that I'm using to show the current weather condition.</p><br>
+
+                         <h2>The Process</h2>
+                         <p class="l-txt">I primarily used the iPhone's native weather app design as a starting point for the design of my own app. That said I added my own twists to it, being inspired by the numerous design concepts of weather apps on dribbble, and it is because of all that I saw there that made me want to include illustrations in my own app.</p><br>
+                         
+                         <p class="l-txt">The following are just one of many designs that I inspired me.</p><br>
+                         <div class="a-col">
+                              <div class="prototype-container a-container a-margin-16-top-bottom a-width-6-12">
+                                   <div id="prototype-inner" class="a-margin-16-right">
+                                        <div class="img-container" style="cursor: default;">
+                                             <img src="Assets/Images/appDesign1.png" alt="">
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <div class="prototype-container a-container a-margin-16-top-bottom a-width-6-12">
+                                   <div id="prototype-inner" class="a-margin-16-left">
+                                        <div class="img-container" style="cursor: default; ">
+                                             <img src="Assets/Images/appDesign2.png" alt="">
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <h2>Challenge(s) I came across</h2>
+                         <p class="l-txt">Firstly, figuring out the design & layout for my application was challenging - deciding how and where the data would be shown was quite a tedious process.</p><br>
+
+                         <p class="l-txt">Secondly, the Openweather API itself proved to be quite frustrating. At the time when I started coding the project, Openweather API did not provided a single API call to obtain all the data, i.e. the current weather and the hourly and weekly forecast. The user had to make three calls to obtain all the data, which was quite frustrating. However, they have recently provided an API call that can fetch all the required data, although I had to modify my code to accomodate for the change.</p><br>
+
+                         <p class="l-txt">Lastly, as I'm not an illustrator I did not use my own illustrations, and as pleased as I am with the ones I found, there were times where I wished I had my own.</p><br>
+
+                         <h2>Future Improvements & Features</h2>
+                         <p class="l-txt">The very first feature I would add is the ability to search weather forecast of any city. At the moment, the application shows weather of where the user is currently located. I would probably be integrating Google's Map API for that and setting up a proxy server using Express.</p><br>
+
+                         <p class="l-txt">I would also like to maintain the "history" of all the places the user has searched for and provide an easy access to to those locations, so that the user would not have to search for the same city over and over again.</p><br>
+                    </div>
+               </div>
+          </div>
+     </div>
+
+     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+     <script src="Assets/JS/script.js"></script>
+</body>
+
+</html>

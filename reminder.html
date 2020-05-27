@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <title>A.R.K</title>
+
+     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
+
+     <link rel="stylesheet" href="Assets/CSS/myStylesheet.css">
+     <link rel="stylesheet" href="Assets/CSS/style.css">
+</head>
+
+<body>
+     <div class="head">
+          <div class="navbar after-scroll">
+               <h4 class="h-4 a-padding-16-top-bottom"><a href="index.html" style="color: black; text-decoration: none;">Abdur Rafay Khawar</a></h4>
+          </div>
+     </div>
+
+     <div class="a-section" style="padding-top: 100px;">
+          <div class="a-margin-16-left-right">
+               <div class="a-container a-width-12-12">
+                    <div class="a-margin-16-left-right">
+
+                         <h1>Reminder App</h1><br>
+
+                         <p class="l-txt">Below is a demo of what the project that I made:</p>
+
+                         <div class="a-col">
+                              <div id="gif-container" class="a-container a-margin-16-top-bottom a-width-6-12">
+                                   <div class="a-margin-16-right">
+                                        <a href="https://rafaykhawar09.github.io/reminder/">
+                                             <div class="img-container" style="padding-top: 75%; border-radius: 5px; box-shadow: 0 5px 10px -3px grey; overflow: hidden;">
+                                                  <img src="Assets/Images/planner.png" alt="">
+                                             </div>
+                                        </a>
+                                   </div>
+                              </div>
+                         </div>
+                         
+                         <h2>What is the project?</h2>
+                         <p class="l-txt">The application allows the user to create, edit and delete reminders. Each hour of a day can have multiple reminders that are stored in the local storage. All the data stored in local storage for 24 hours, after which it is erased. Furthermore, each reminder can also be "checked off" if the users wishes to do so.</p><br>
+                         
+                         <h2>What I learnt & the challenge(s) I came across.</h2><br>
+                         <p class="l-txt">Everytime a reminder is entered into a time-block, a "new reminder" placeholder is appended to the time-block so that the user can enter another reminder if they wish to do so. As the div is appended on runtime we need event delegation for events such as "onSubmit" & "onClick" to work properly. I had previously worked with event delegation but not as extensively, so not only was this project a good reinforcement of my concepts, I also learnt other things, which leads me to my next challenge, traversing the DOM tree.</p><br>
+
+                         <p class="l-txt">Syntactically traversing a DOM tree in vanilla javascript is different than traversing it in jQuery, which proved to be a slight hurdle. However, I enough practice of it as that is the main way I was accessing all the different elements.</p><br>
+
+                         <p class="l-txt">I also learnt about javascript class objects, which work differently than classes from other languages that I'm used to mainly C++ and Java. It was primarily the syntax that took some getting use to.</p><br>
+                    </div>
+               </div>
+          </div>
+     </div>
+
+     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+     <script src="Assets/JS/script.js"></script>
+</body>
+
+</html>

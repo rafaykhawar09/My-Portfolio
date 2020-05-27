@@ -45,8 +45,8 @@
 }
 
 .link{
-     width: 50px;
-     height: 35px;
+     width: 60px;
+     height: 40px;
      border-radius: 5px;
      display: flex;
      justify-content: center;
@@ -57,22 +57,54 @@
 
 .in{
      background: #007bb5;
-     box-shadow: 0 5px #003b57;
+     box-shadow: 0 6px #002d42;
+}
+.in:hover{
+     background: #005780;
+     box-shadow: 0 6px #001b27;
+}
+.in:active{
+     box-shadow: 0 3px #001b27;
+     transform: translateY(3px);
 }
 
 .resume{
      background: #dc143c;
-     box-shadow: 0 5px #880f27;
+     box-shadow: 0 6px #700d21;
+}
+.resume:hover{
+     background: #a30e2c;
+     box-shadow: 0 6px #3b0711;
+}
+.resume:active{
+     box-shadow: 0 3px #3b0711;
+     transform: translateY(3px);
 }
 
 .git{
      background: #24292e;
-     box-shadow: 0 5px #15181b;
+     box-shadow: 0 6px #15181b;
+}
+.git:hover{
+     background: #171a1d;
+     box-shadow: 0 6px #000000;
+}
+.git:active{
+     box-shadow: 0 3px #000000;
+     transform: translateY(3px);
 }
 
 .mail{
      background: #808080;
-     box-shadow: 0 5px #5e5e5e;
+     box-shadow: 0 6px #3b3b3b;
+}
+.mail:hover{
+     background: #616161;
+     box-shadow: 0 6px #222222;
+}
+.mail:active{
+     box-shadow: 0 3px #222222;
+     transform: translateY(3px);
 }
 
 .img-container{
@@ -117,7 +149,7 @@
      padding: 2px 8px;
 }
 
-.florin-link{
+.a-link{
      text-decoration: none;
      color: lightseagreen;
 }

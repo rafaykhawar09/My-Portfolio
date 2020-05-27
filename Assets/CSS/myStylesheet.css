@@ -393,7 +393,7 @@
 
 .a-section{
      margin: auto;
-     margin-top: 25px;
+     /* margin-top: 25px; */
      max-width: 1366px;
 }
 
