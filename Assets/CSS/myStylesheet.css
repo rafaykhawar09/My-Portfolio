@@ -386,6 +386,26 @@
      width: calc(100% * (6/12));
 }
 
+.a-width-7-12{
+     width: calc(100% * (7/12));
+}
+
+.a-width-8-12{
+     width: calc(100% * (8/12));
+}
+
+.a-width-9-12{
+     width: calc(100% * (9/12));
+}
+
+.a-width-10-12{
+     width: calc(100% * (10/12));
+}
+
+.a-width-11-12{
+     width: calc(100% * (11/12));
+}
+
 .a-width-12-12{
      width: 100%;
 }

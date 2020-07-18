@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <title>A.R.K</title>
+
+     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
+
+     <link rel="stylesheet" href="Assets/CSS/myStylesheet.css">
+     <link rel="stylesheet" href="Assets/CSS/style.css">
+</head>
+
+<body>
+     <div class="head">
+          <div class="navbar after-scroll">
+               <h4 class="h-4 a-padding-16-top-bottom"><a href="index.html" style="color: black; text-decoration: none;">Abdur Rafay Khawar</a></h4>
+          </div>
+     </div>
+
+     <div class="a-section" style="padding-top: 100px;">
+          <div class="a-margin-16-left-right">
+               <div class="a-container a-width-12-12">
+                    <div class="a-margin-16-left-right">
+
+                         <h1>Hero Section Animation on Scroll</h1><br>
+
+                         <p class="l-txt">Below is the demo of the project:</p>
+
+                         <div class="a-col">
+                              <div id="gif-container" class="a-container a-margin-16-top-bottom a-width-9-12">
+                                   <div class="a-margin-16-right">
+                                        <a href="https://rafaykhawar09.github.io/appleWatch-hero-animation/">
+                                             <div class="img-container" style="padding-top: 62.025%; border-radius: 5px; box-shadow: 0 5px 10px -3px grey; overflow: hidden;">
+                                                  <img src="Assets/Images/watchHero.gif" alt="">
+                                             </div>
+                                        </a>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <h2>What is the experiment?</h2>
+                         <p class="l-txt">It is a recreation of Apple's WatchOS hero section which rotates when the user scrolls down.</p><br>
+                         
+                         <h2>Challenge(s) I came across</h2>
+                         <p class="l-txt">The first challenge was the circular orientation of the "watch faces", which I was able to resolve by finding a very clever piece of <a href="https://css-tricks.com/snippets/sass/placing-items-circle/"  target="_blank" style="text-decoration: none; color: lightseagreen;"><b>code</b></a>, courtesy of Ana Tudor.</p><br>
+                         
+                         <p class="l-txt">Secondly, positioning the circular div such that it is "fixed" and rotates till a certain scroll length, after which it scrolls up was tricky to figure out. In version one of this experiment, I solved this by keeping the position of the div fixed and after scrolling down that certain length the position became absolute. This was a very hacky and janky method especially since it required that I change the height of the wrapper div as well. Eventually this was resolved by using "position: sticky", which I previously did not have a good grasp and understanding of.</p><br>
+
+                         <p class="l-txt">Lastly, the design of the watch faces. Although not a "challenge" per se, it was particularly time consuming.</p><br>
+                    </div>
+               </div>
+          </div>
+     </div>
+
+     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+     <script src="Assets/JS/script.js"></script>
+</body>
+
+</html>
